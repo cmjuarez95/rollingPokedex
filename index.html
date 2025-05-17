@@ -1,21 +1,159 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="pokedex copy">
-    <meta name="author" content="Mariano Juarez">
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="pokedex copy" />
+    <meta name="author" content="Mariano Juarez" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      href="https://iconos8.es/icon/Mo9jZyytyLqh/pokemmo"
     />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Pokedex</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-danger-subtle">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/doodle/48/pokemmo--v2.png"
+              alt="pokemmo--v2"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="N° de pokemon"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-</body>
+    </main>
+    <footer class="bg-danger-subtle text-color-secondary">
+      <section class="container">
+        <form class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="email" class="form-label"
+                ><h4>Registrate para recibir info de Pokemon!</h4></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="row">
+              <div class="mb-3 col-6">
+                <select name="pais" id="pais" class="form-control">
+                  <option value="" disabled selected hidden>País</option>
+                  <option value="Afganistán">Afganistán</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Brasil">Brasil</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="EEUU">EEUU</option>
+                  <option value="Afganistán">Afganistán</option>
+                  <option value="Afganistán">Afganistán</option>
+                  <option value="Afganistán">Afganistán</option>
+                  <option value="Afganistán">Afganistán</option>
+                </select>
+              </div>
+              <div class="mb-3 col-6">
+                <input
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  placeholder="Fecha de nacimiento"
+                  class="form-control"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <p>Me gustaría recibir Emails sobre:</p>
+          
+          <div class="form-check mb-3">
+            
+                
+              <input
+                class="form-check-input me-2 mt-0"
+                type="checkbox"
+                id="first_checkbox"
+            
+              />
+        
+              <label for="first_checkbox" class="form-check-label">Juegos, apps y más</label>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input me-2 mt-0"
+                type="checkbox"
+                id="second_checkbox"
+              />
+              <label for="second_checkbox" class="form-check-label">Pokemon center (nuestro shop online oficial)</label>
+              </div>
+              <div class="form-check mb-3">  
+              <input
+                class="form-check-input me-2 mt-0"
+                type="checkbox"
+                id="third_checkbox"
+              />
+              <label for="third_checkbox" class="form-check-label" >Juegos, apps y más</label>
+            </div>  
+          </div>
+         
+          </div>
+        </form>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
