@@ -47,9 +47,6 @@
                   >Inicio</a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
             </ul>
             <form class="d-flex" role="search">
               <input
@@ -66,11 +63,13 @@
         </div>
       </nav>
     </header>
+    
     <main>
 
     </main>
+
     <footer class="bg-danger-subtle text-color-secondary">
-      <section class="container">
+      <section class="container mt-3">
         <form class="row">
           <div class="col-md-6">
             <div class="mb-3">
@@ -87,7 +86,7 @@
             </div>
             <div class="row">
               <div class="mb-3 col-6">
-                <select name="pais" id="pais" class="form-control">
+                <select name="pais" id="pais" class="form-control" required>
                   <option value="" disabled selected hidden>País</option>
                   <option value="Afganistán">Afganistán</option>
                   <option value="Argentina">Argentina</option>
@@ -109,9 +108,11 @@
                   name="trip-start"
                   placeholder="Fecha de nacimiento"
                   class="form-control"
+                  required
                 />
               </div>
             </div>
+             
           </div>
           <div class="col-12 col-md-6 col-lg-6">
             <p>Me gustaría recibir Emails sobre:</p>
@@ -141,12 +142,17 @@
                 class="form-check-input me-2 mt-0"
                 type="checkbox"
                 id="third_checkbox"
+                required
               />
-              <label for="third_checkbox" class="form-check-label" >Juegos, apps y más</label>
-            </div>  
+              <label for="third_checkbox" class="form-check-label" >Acepto los terminos y condiciones</label>
+            </div>
+             
           </div>
-         
           </div>
+          <div class="col-md-6">
+            <button type="submit" class="btn btn-outline-secondary mb-3">Registrar</button>
+          </div>
+          
         </form>
       </section>
     </footer>
