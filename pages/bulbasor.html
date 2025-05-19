@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="pokedex copy" />
+    <meta name="author" content="Mariano Juarez" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://iconos8.es/icon/Mo9jZyytyLqh/pokemmo"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Pokedex</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-danger-subtle">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              width="48"
+              height="48"
+              src="https://img.icons8.com/doodle/48/pokemmo--v2.png"
+              alt="pokemmo--v2"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="N° de pokemon"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-secondary" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="container">
+        <div class="d-flex gap-3 align-items-center text-center justify-content-center">
+      <h1 >Bulbasor</h1>
+      <h2 class="text-secondary">#0001</h2>
+      </div>
+
+      <section class="row">
+        <div class="col-12 col-lg-6 rounded text-center">
+            <div class="bg-danger-subtle mb-2 rounded">
+            <img src="../img/bullbasor.PNG" alt="Bulbasor" class="img-fluid">
+            </div>
+            <div>
+            <img src="../img/bulbasor_stadistics.jpg" alt="estadisticas bulbasor" class="w-100 rounded">
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <p class="fs-4 lead">
+                Durante algún tiempo después de su nacimiento, utiliza los nutrientes que contiene la semilla que tiene en la espalda para crecer.
+            </p>
+            <div class="bg-primary-subtle row rounded m-1">
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <div class="">
+                        <p class="mb-1 fs-5">Altura:</p>
+                        <p class="text-secondary lead">518,16 cm</p>
+                    </div>
+                    <div class="">
+                        <p class="mb-1 fs-5">Peso:</p>
+                        <p class="text-secondary lead">6,90 kg</p>
+                    </div>
+                    <div class="">
+                        <p class="mb-1 fs-5">Género:</p>
+                        <p class="text-secondary fs-3"><b>&#9792;</b> <b>&#9794;</b> </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                <div class="">
+                    <p class="mb-1 fs-5">Categoría:</p>
+                    <p class="text-secondary lead">Semilla</p>
+                </div>
+                <div class="">
+                    <p class="mb-1 fs-5">Habilidades:</p>
+                    <p class="text-secondary lead">Potencia los movimientos de tipo Planta cuando los HP del Pokémon son bajos.</p>
+                </div>
+                </div>
+
+            </div>
+
+            <p class="fs-4 lead mt-4">Tipo</p>
+            <div class="d-flex gap-3">
+            
+              <div class="tipoPlanta fs-4 px-5">Planta</div>
+              <div class="tipoVeneno fs-4 px-5">Veneno</div>
+            </div>
+            <p class="fs-4 lead mt-4">Debilidades</p>
+            
+            <div class="row gap-2">
+                <div class="d-flex gap-2 col-12">
+              <div class="tipoFuego fs-4 px-4">Fuego</div>
+              <div class="tipoAgua fs-4 px-4">Hielo</div>
+              <div class="tipoVuelo fs-4 px-4">Volador</div>
+              </div>
+              <div class="d-flex gap-3 col-12">
+              <div class="tipoPsiquico fs-4 px-4">Psiquico</div>
+              </div>
+            </div>
+            
+            </div>
+        
+      </section>
+      
+
+    </main>
+
+    <footer class="bg-danger-subtle text-color-secondary">
+      <section class="container mt-3">
+        <form class="row">
+          <div class="col-md-6">
+            <div class="mb-3">
+              <label for="email" class="form-label"
+                ><h4>Registrate para recibir info de Pokemon!</h4></label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="row">
+              <div class="mb-3 col-6">
+                <select name="pais" id="pais" class="form-control" required>
+                  <option value="" disabled selected hidden>País</option>
+                  <option value="Afganistán">Afganistán</option>
+                  <option value="Argentina">Argentina</option>
+                  <option value="Brasil">Brasil</option>
+                  <option value="Bolivia">Bolivia</option>
+                  <option value="Chile">Chile</option>
+                  <option value="Colombia">Colombia</option>
+                  <option value="EEUU">EEUU</option>
+                  <option value="Afganistán">Afganistán</option>
+                  <option value="Afganistán">Afganistán</option>
+                  <option value="Afganistán">Afganistán</option>
+                  <option value="Afganistán">Afganistán</option>
+                </select>
+              </div>
+              <div class="mb-3 col-6">
+                <input
+                  type="date"
+                  id="start"
+                  name="trip-start"
+                  placeholder="Fecha de nacimiento"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </div>
+             
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <p>Me gustaría recibir Emails sobre:</p>
+          
+          <div class="form-check mb-3">
+            
+                
+              <input
+                class="form-check-input me-2 mt-0"
+                type="checkbox"
+                id="first_checkbox"
+            
+              />
+        
+              <label for="first_checkbox" class="form-check-label">Juegos, apps y más</label>
+            </div>
+            <div class="form-check mb-3">
+              <input
+                class="form-check-input me-2 mt-0"
+                type="checkbox"
+                id="second_checkbox"
+              />
+              <label for="second_checkbox" class="form-check-label">Pokemon center (nuestro shop online oficial)</label>
+              </div>
+              <div class="form-check mb-3">  
+              <input
+                class="form-check-input me-2 mt-0"
+                type="checkbox"
+                id="third_checkbox"
+                required
+              />
+              <label for="third_checkbox" class="form-check-label" >Acepto los terminos y condiciones</label>
+            </div>
+             
+          </div>
+          </div>
+          <div class="col-md-6">
+            <button type="submit" class="btn btn-outline-secondary mb-3">Registrar</button>
+          </div>
+          
+        </form>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
