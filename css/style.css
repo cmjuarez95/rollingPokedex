@@ -96,3 +96,7 @@ main{
   transition: 500ms;
   cursor: pointer;
 }
+.fs-giant{
+  font-size: 600%;
+  writing-mode: vertical-lr;
+}
