@@ -101,6 +101,19 @@ main{
   writing-mode: vertical-lr;
 }
 
+.foto-dev{
+  width: 75vh;
+  height: 75vh;
+  border-radius: 50%;
+}
+
+.img-dev{ 
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
 @media (width>=992px) {
   .fs-giant{
   font-size: 500%;
