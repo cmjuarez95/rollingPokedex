@@ -97,6 +97,14 @@ main{
   cursor: pointer;
 }
 .fs-giant{
-  font-size: 600%;
+  font-size: 500%;
   writing-mode: vertical-lr;
+}
+
+@media (width>=992px) {
+  .fs-giant{
+  font-size: 500%;
+  writing-mode: horizontal-tb;
+}
+  
 }
